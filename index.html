@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CC Taste - Authentic Chinese Street Food in Edinburgh. Discover the best Roujiamo, Liangpi, and more at 11 Summerhall Pl.">
+    <title>CC Taste | Authentic Chinese Street Food in Edinburgh</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">CC Taste</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">About</a></li>
+                <li><a href="#highlights">Highlights</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#location">Location</a></li>
+                <li><a href="#hours">Hours</a></li>
+            </ul>
+            <a href="tel:07354252238" class="btn btn-primary nav-cta">Call Now</a>
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileMenuOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">×</button>
+        <ul class="mobile-nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#highlights">Highlights</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#hours">Hours</a></li>
+            <li><a href="tel:07354252238" class="mobile-cta">📞 Call Now</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="hero" id="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">CC Taste</h1>
+            <p class="hero-subtitle">Authentic Chinese Street Food in Edinburgh</p>
+            <div class="hero-buttons">
+                <a href="#highlights" class="btn btn-primary">See Highlights</a>
+                <a href="https://www.google.com/maps/place/CC+Taste+%E4%B8%96%E5%91%B3/@55.9391577,-3.1820636,15z/data=!4m6!3m5!1s0x4887c7b31995a259:0x3d651ab145afc7ed!8m2!3d55.9392125!4d-3.1818383!16s%2Fg%2F11xs5xn063?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-outline">Get Directions</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">Our Story</h2>
+            <div class="about-content reveal">
+                <p class="about-text">
+                    Nestled in the heart of Edinburgh's Summerhall, <strong>CC Taste</strong> is your gateway to the bold, authentic flavors of Chinese street food. Our family-run kitchen brings generations of culinary tradition to every dish—from our legendary <em>Roujiamo</em> to our perfectly crafted <em>Liangpi</em>.
+                </p>
+                <p class="about-text">
+                    Whether you're craving a quick bite between adventures or a satisfying meal with friends, we promise fresh ingredients, genuine recipes, and the warm hospitality that makes every visit feel like home. Discover Edinburgh's best-kept secret for authentic Chinese taste.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="section highlights" id="highlights">
+        <div class="container">
+            <h2 class="section-title">Highlights</h2>
+            <div class="highlights-grid">
+                <div class="highlight-card reveal">
+                    <div class="highlight-image">
+                        <img src="assets/food1.png" alt="Signature Dish 1" loading="lazy">
+                    </div>
+                </div>
+                <div class="highlight-card reveal">
+                    <div class="highlight-image">
+                        <img src="assets/food2.png" alt="Signature Dish 2" loading="lazy">
+                    </div>
+                </div>
+                <div class="highlight-card reveal">
+                    <div class="highlight-image">
+                        <img src="assets/food3.png" alt="Signature Dish 3" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="section reviews" id="reviews">
+        <div class="container">
+            <h2 class="section-title">What Our Guests Say</h2>
+            <div class="reviews-slider reveal">
+                <div class="reviews-track" id="reviewsTrack">
+                    <div class="review-slide">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"The food here is amazing! The roujiamo is incredibly delicious... Highly recommended!"</p>
+                        <p class="review-author">— Sunny Yang</p>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"As someone from Sichuan... Double Chilli Pork Hock is absolutely incredible..."</p>
+                        <p class="review-author">— Anita Gao</p>
+                    </div>
+                    <div class="review-slide">
+                        <div class="review-stars">★★★★★</div>
+                        <p class="review-text">"Food here is amazing! Liangpi is authentic... definitely Edinburgh's best Chinese spot!"</p>
+                        <p class="review-author">— Ziyi Yang</p>
+                    </div>
+                </div>
+                <button class="slider-btn slider-prev" id="sliderPrev" aria-label="Previous review">❮</button>
+                <button class="slider-btn slider-next" id="sliderNext" aria-label="Next review">❯</button>
+                <div class="slider-dots" id="sliderDots">
+                    <button class="dot active" data-index="0" aria-label="Go to review 1"></button>
+                    <button class="dot" data-index="1" aria-label="Go to review 2"></button>
+                    <button class="dot" data-index="2" aria-label="Go to review 3"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="section location" id="location">
+        <div class="container">
+            <h2 class="section-title">Find Us</h2>
+            <div class="location-content reveal">
+                <div class="location-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <div>
+                            <h3>Address</h3>
+                            <p>11 Summerhall Pl, Edinburgh EH9 1QE</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">📞</span>
+                        <div>
+                            <h3>Phone</h3>
+                            <p><a href="tel:07354252238">07354 252 238</a></p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🍽️</span>
+                        <div>
+                            <h3>Services</h3>
+                            <p>Delivery • Dine-in • Takeaway</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="location-map">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2234.7023045608904!2d-3.1844385!3d55.9391577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4887c7b31995a259%3A0x3d651ab145afc7ed!2sCC%20Taste%20%E4%B8%96%E5%91%B3!5e0!3m2!1sen!2suk!4v1705500000000!5m2!1sen!2suk" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0; border-radius: 12px;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://www.google.com/maps/place/CC+Taste+%E4%B8%96%E5%91%B3/@55.9391577,-3.1820636,15z/data=!4m6!3m5!1s0x4887c7b31995a259:0x3d651ab145afc7ed!8m2!3d55.9392125!4d-3.1818383!16s%2Fg%2F11xs5xn063?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-primary map-btn">Open in Google Maps</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hours Section -->
+    <section class="section hours" id="hours">
+        <div class="container">
+            <h2 class="section-title">Opening Hours</h2>
+            <div class="hours-table reveal">
+                <div class="hours-row">
+                    <span class="day">Monday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Tuesday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Wednesday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Thursday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Friday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row">
+                    <span class="day">Saturday</span>
+                    <span class="time">9:00 AM – 7:00 PM</span>
+                </div>
+                <div class="hours-row highlight">
+                    <span class="day">Sunday</span>
+                    <span class="time">12:00 PM – 7:00 PM</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3 class="footer-logo">CC Taste</h3>
+                    <p class="footer-tagline">Authentic Chinese Street Food</p>
+                </div>
+                <div class="footer-info">
+                    <div class="footer-col">
+                        <h4>Contact</h4>
+                        <p>11 Summerhall Pl<br>Edinburgh EH9 1QE</p>
+                        <p><a href="tel:07354252238">07354 252 238</a></p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Hours</h4>
+                        <p>Mon–Sat: 9AM – 7PM</p>
+                        <p>Sunday: 12PM – 7PM</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Visit</h4>
+                        <a href="https://www.google.com/maps/place/CC+Taste+%E4%B8%96%E5%91%B3/@55.9391577,-3.1820636,15z/data=!4m6!3m5!1s0x4887c7b31995a259:0x3d651ab145afc7ed!8m2!3d55.9392125!4d-3.1818383!16s%2Fg%2F11xs5xn063?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener" class="btn btn-outline-light">Get Directions</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 CC Taste. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
